@@ -1,0 +1,84 @@
+// importing fonts 
+// ==================================================================
+@font-face
+    font-family: MerriweatherSansBold
+    src: url("vendor/webfonts/custom/MerriweatherSans-Bold.ttf")
+
+@font-face
+    font-family: RubikRegular
+    src: url("vendor/webfonts/custom/Rubik-Regular.ttf")
+
+// reseting basic styles
+// ==================================================================
+html
+  scroll-behavior: smooth
+
+body
+	background-color: #fff
+	overflow-x: hidden
+	color: $secondery
+	font-family: 'RbikRegular', sans-serif
+	font-size: 1rem
+
+// all element styls
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	border: none
+	background: none
+	border-radius: 0
+	outline: none
+	text-decoration: none
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6
+		font-family: 'MerriweatherSansBold', sans-serif
+		line-height: 1.25
+		color: $heading
+
+	p,
+	textarea,
+	input,
+	pre,
+	button,
+	figcaption,
+	label,
+	a
+		font-family: 'RubikRegular', sans-serif
+		line-height: 1.15
+		color: $secondery
+
+	button,
+	a
+		cursor: pointer
+		transition: .3s
+		display: inline-block
+		text-decoration: none!important
+
+		&:hover
+			color: $primary
+
+	button,
+	.button
+		text-align: center
+		padding: 10px 25px
+		font-size: 1rem
+		line-height: 1.2
+		text-transform: capitalize
+		border-radius: 10px
+		font-weight: 600
+		color: #fff
+		background-color: $primary
+
+		&:hover
+			color: #fff
+			opacity: .8
+	
+	.disabled
+		opacity: 0.5!important
+		
+		

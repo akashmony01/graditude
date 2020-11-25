@@ -1,0 +1,418 @@
+section.banner
+    position: relative
+
+    .bannerContainer
+        padding: 0
+        padding-top: 150px
+        padding-bottom: 50px
+        min-height: 780px
+
+        .bannerContent
+            width: 50%
+            padding-right: 5%
+
+            .bannerText
+                margin-bottom: 50px
+                
+                h2
+                    padding-right: 10%
+                    font-size: 2.5rem
+                    padding-bottom: 15px
+
+                p
+                    font-size: 1.15rem
+
+            .bannerBox
+                max-width: 450px
+                background-color: #FAFAFF
+                border-radius: 15px
+                overflow: hidden 
+
+                .boxHeader
+                    background-color: $secondery
+                    color: #fff
+                    padding: 15px
+                    opacity: .8
+                    text-align: center
+
+                .boxInner
+                    padding: 20px
+
+                    .innerText
+                        font-size: 1.1rem
+
+                    .innerHeader
+                        font-size: 1.3rem
+                        margin-bottom: 15px
+                        font-family: RubikRegular
+                        font-weight: 600
+
+                    .boxAction
+                        display: flex
+                        justify-content: space-between
+                        gap: 15px
+
+                        .donateBtn
+                            flex: .5
+                            @include boxBtnStyle
+
+                    .amountOption
+                        display: flex
+                        gap: 10px
+                        padding: 5px 0
+
+                        .amountBtn
+                            flex: .25
+                            @include boxBtnStyle
+
+                    .boxInput
+                        position: relative
+                        
+                        span
+                            position: absolute
+                            top: 50%
+                            transform: translateY(-50%)
+                            left: 15px
+                            font-size: 1.1rem
+                            color: $secondery
+                            opacity: .65
+
+
+                        input
+                            @include boxBtnStyle
+                            text-align: left
+                            padding-left: 30px
+                            padding-right: 15px
+                            max-width: 150px
+
+                    .boxSubmit
+                        text-align: center
+                        margin-top: 35px
+                        margin-bottom: 10px
+                        
+                        .submitBtn
+                            padding: 15px 50px
+                            border-radius: 30px
+                            font-size: 1.1rem
+
+        .bannerBg
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            width: 50%
+            overflow: hidden
+            border-top-left-radius: 50px
+            border-bottom-left-radius: 50px
+
+            background-position: 0 0
+            background-size: cover
+            background-repeat: no-repeat
+
+            &:after
+                position: absolute
+                left: 0
+                right: 0
+                bottom: 0
+                top: 0
+                content: ''
+                background-image: ur('../../media/image/imgOverlay.png')
+
+
+// banner responsive
+section.banner
+    .bannerContainer
+        .bannerContent
+            @media only screen and (max-width: 991px)
+                position: sticky
+                z-index: 99
+                width: 100%
+                background-color: #fff
+                padding: 25px
+                margin-top: 150px
+                border-radius: 15px
+
+            .bannerText
+                h2
+                    padding-right: 0
+
+            .bannerBox
+                max-width: 100%
+
+                boxHeader
+
+        .bannerBg
+            @media only screen and (max-width: 991px)
+                top: 0
+                left: 0
+                right: 0
+                width: 100%
+                height: 500px
+                border-radius: 0
+
+
+section.about
+    .aboutContainer
+        padding: 75px 0
+        display: flex
+        align-items: center
+        
+        .aboutImg
+            width: 50%
+            border-radius: 25px
+            overflow: hidden
+            position: relative
+
+            img
+                width: 100%
+                height: auto
+
+            &:after
+                position: absolute
+                left: 0
+                right: 0
+                bottom: 0
+                top: 0
+                content: ''
+                background-image: ur('../../media/image/imgOverlay.png')
+        
+        .aboutContent
+            width: 50%
+            padding: 25px
+            padding-left: 5%
+
+            .aboutText
+                h3
+                    font-size: 1.75rem
+                    margin-bottom: 15px
+
+
+                p
+                    font-size: 1.1rem
+                    line-height: 1.5
+            
+            .aboutBtn
+                margin-top: 25px
+                
+                .button
+                    padding: 15px 30px
+                    border-radius: 30px
+                    font-size: .95rem
+
+                    &.btnWithImg
+                        background-color: #EDF9F8
+                        color: $primary
+                        margin-left: 15px
+
+                        img
+                            margin-left: 10px
+
+
+// about responsive
+section.about
+    .aboutContainer
+        @media only screen and (max-width: 991px)
+            flex-direction: column-reverse
+            padding-top: 0
+
+        .aboutImg
+            width: 100%
+
+        .aboutContent
+            width: 100%
+            padding: 0
+            margin-bottom: 50px
+
+
+
+section.package
+    padding: 75px 0
+    background-color: #FAFAFF
+
+    .packageHeader
+        text-align: center
+        margin-bottom: 50px
+
+        h4
+            font-size: 1.6rem
+            padding-bottom: 10px
+
+        p
+            font-size: 1.1rem
+
+    .packageContainer
+        display: flex
+        justify-content: space-between
+        align-items: start
+        gap: 25px
+
+        .packageItem
+            width: 33.33%
+            background-color: #fff
+            padding: 25px
+            border-radius: 15px
+            text-align: center
+
+            img
+                max-width: 75px
+                height: auto
+                margin-bottom: 35px
+
+            .packageText
+                text-align: left
+
+                h5
+                    font-size: 1.25rem
+                    margin-bottom: 15px
+
+                ul
+                    list-style-type: none
+                    margin-bottom: 25px
+
+                    li
+                        position: relative
+                        font-size: 1.1rem
+                        padding-left: 20px
+                        margin-bottom: 15px
+
+                        &::before
+                            position: absolute
+                            top: 10px
+                            left: 0
+                            height: 12px
+                            width: 5px
+                            border-radius: 3px
+                            background-color: $primary
+                            content: ''
+
+            .packageBtn
+                padding: 15px 50px
+                font-size: .9rem
+                border-radius: 30px
+                margin: 0 auto
+
+
+// package responsive
+section.package
+    .packageContainer
+        gap: 0
+        flex-direction: column
+        
+        .packageItem
+            width: 100%
+            margin-bottom: 35px
+
+            &:last-child
+                margin-bottom: 0
+
+
+section.detail
+    padding: 50px 0
+    .detailContainer
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        .detailContent
+            width: 50%
+
+            p
+                font-size: 1.1rem
+                color: $primary
+                margin-bottom: 15px
+            h3
+                font-size: 1.75rem
+                margin-bottom: 25px
+
+            ul
+                list-style-type: none
+                margin: 0
+
+                li
+                    position: relative
+                    font-size: 1.15rem
+                    padding-left: 45px
+                    margin-bottom: 20px
+
+                    &::before
+                        position: absolute
+                        top: 12px
+                        left: 0
+                        height: 5px
+                        width: 25px
+                        border-radius: 3px
+                        background-color: $primary
+                        content: ''
+
+
+        .detailImg
+            width: 50%
+            padding: 50px 10%
+
+            img
+                max-width: 100%
+                height: auto
+
+
+// detail responsive
+section.detail
+    .detailContainer
+        flex-direction: column-reverse
+
+        .detailContent
+            width: 100%
+
+        .detailImg
+            width: 100%
+            padding: 75px 15%
+            padding-top: 0
+
+
+
+section.newsletter
+    position: relative
+    padding: 50px 0
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+
+    &:after
+        position: absolute
+        left: 0
+        right: 0
+        bottom: 0
+        top: 0
+        content: ''
+        background-color: rgba(0, 0, 0, .65)
+
+    .newletterContainer
+        z-index: 1
+        position: sticky
+        text-align: center
+
+        h3
+            font-size: 1.75rem
+            color: #fff
+            margin-bottom: 15px
+
+        p
+            width: 80%
+            margin: 0 auto
+            margin-bottom: 25px
+            color: #fff
+            opacity: .75
+
+        .newsletterFrom
+            input
+                display: block
+                width: 40%
+                background-color: #fff
+                padding: 20px 25px
+                border-radius: 30px
+                margin: 0 auto
+
+            button
+                padding: 15px 50px
+                margin-top: 25px
+                border-radius: 30px
+                outline: none
