@@ -361,15 +361,18 @@ section.detail
 // detail responsive
 section.detail
     .detailContainer
-        flex-direction: column-reverse
+        @media only screen and (max-width: 991px)
+            flex-direction: column-reverse
 
         .detailContent
-            width: 100%
+            @media only screen and (max-width: 991px)
+                width: 100%
 
         .detailImg
-            width: 100%
-            padding: 75px 15%
-            padding-top: 0
+            @media only screen and (max-width: 991px)
+                width: 100%
+                padding: 75px 15%
+                padding-top: 0
 
 
 

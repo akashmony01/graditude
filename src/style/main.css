@@ -916,18 +916,24 @@ section.detail .detailContainer .detailImg img {
   height: auto;
 }
 
-section.detail .detailContainer {
-  flex-direction: column-reverse;
+@media only screen and (max-width: 991px) {
+  section.detail .detailContainer {
+    flex-direction: column-reverse;
+  }
 }
 
-section.detail .detailContainer .detailContent {
-  width: 100%;
+@media only screen and (max-width: 991px) {
+  section.detail .detailContainer .detailContent {
+    width: 100%;
+  }
 }
 
-section.detail .detailContainer .detailImg {
-  width: 100%;
-  padding: 75px 15%;
-  padding-top: 0;
+@media only screen and (max-width: 991px) {
+  section.detail .detailContainer .detailImg {
+    width: 100%;
+    padding: 75px 15%;
+    padding-top: 0;
+  }
 }
 
 section.newsletter {
