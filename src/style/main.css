@@ -207,9 +207,21 @@ body {
   }
 }
 
+@media only screen and (max-width: 575px) {
+  .header .headerContainer .logo {
+    width: 150px;
+  }
+}
+
 @media only screen and (max-width: 1199px) {
   .header .headerContainer .nav {
     width: calc( 100% - 175px);
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .header .headerContainer .nav {
+    width: calc( 100% - 150px);
   }
 }
 
@@ -299,6 +311,7 @@ body {
   .header .headerContainer .nav .navBtn .btnMenu {
     width: 30px;
     height: 20px;
+    margin-left: 15px;
   }
 }
 
@@ -658,12 +671,61 @@ section.banner .bannerContainer .bannerBg:after {
   }
 }
 
-section.banner .bannerContainer .bannerContent .bannerText h2 {
-  padding-right: 0;
+@media only screen and (max-width: 575px) {
+  section.banner .bannerContainer .bannerContent {
+    padding: 0;
+    border-radius: 0;
+  }
 }
 
-section.banner .bannerContainer .bannerContent .bannerBox {
-  max-width: 100%;
+@media only screen and (max-width: 575px) {
+  section.banner .bannerContainer .bannerContent .bannerText {
+    padding: 15px 10px;
+    margin-bottom: 25px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  section.banner .bannerContainer .bannerContent .bannerText h2 {
+    padding-right: 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  section.banner .bannerContainer .bannerContent .bannerText h2 {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  section.banner .bannerContainer .bannerContent .bannerBox {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  section.banner .bannerContainer .bannerContent .bannerBox {
+    border-radius: 0;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  section.banner .bannerContainer .bannerContent .bannerBox .boxInner {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  section.banner .bannerContainer .bannerContent .bannerBox .boxInner .boxAction {
+    gap: 5px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  section.banner .bannerContainer .bannerContent .bannerBox .boxInner .amountOption {
+    gap: 5px;
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 991px) {
@@ -677,8 +739,16 @@ section.banner .bannerContainer .bannerContent .bannerBox {
   }
 }
 
+@media only screen and (max-width: 575px) {
+  section.banner .bannerContainer .bannerBg {
+    top: 75px;
+    height: 300px;
+  }
+}
+
 section.about .aboutContainer {
-  padding: 75px 0;
+  padding-top: 75px;
+  padding-bottom: 75px;
   display: flex;
   align-items: center;
 }
@@ -729,12 +799,12 @@ section.about .aboutContainer .aboutContent .aboutBtn .button {
   padding: 15px 30px;
   border-radius: 30px;
   font-size: .95rem;
+  margin-right: 15px;
 }
 
 section.about .aboutContainer .aboutContent .aboutBtn .button.btnWithImg {
   background-color: #EDF9F8;
   color: #20BFA9;
-  margin-left: 15px;
 }
 
 section.about .aboutContainer .aboutContent .aboutBtn .button.btnWithImg img {
@@ -759,6 +829,12 @@ section.about .aboutContainer .aboutContent .aboutBtn .button.btnWithImg img {
     width: 100%;
     padding: 0;
     margin-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  section.about .aboutContainer .aboutContent .aboutBtn .button.btnWithImg {
+    margin-top: 10px;
   }
 }
 
@@ -909,6 +985,7 @@ section.detail .detailContainer .detailContent ul li::before {
 section.detail .detailContainer .detailImg {
   width: 50%;
   padding: 50px 10%;
+  padding-right: 0;
 }
 
 section.detail .detailContainer .detailImg img {
@@ -936,10 +1013,16 @@ section.detail .detailContainer .detailImg img {
   }
 }
 
+@media only screen and (max-width: 575px) {
+  section.detail .detailContainer .detailImg {
+    padding-bottom: 50px;
+  }
+}
+
 section.newsletter {
   position: relative;
   padding: 50px 0;
-  background-position: center;
+  background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -951,7 +1034,7 @@ section.newsletter:after {
   bottom: 0;
   top: 0;
   content: '';
-  background-color: rgba(0, 0, 0, 0.65);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 section.newsletter .newletterContainer {
@@ -988,5 +1071,17 @@ section.newsletter .newletterContainer .newsletterFrom button {
   margin-top: 25px;
   border-radius: 30px;
   outline: none;
+}
+
+@media only screen and (max-width: 991px) {
+  section.newsletter .newletterContainer .newsletterFrom input {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  section.newsletter .newletterContainer .newsletterFrom input {
+    width: 80%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

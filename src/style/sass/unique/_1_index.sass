@@ -132,14 +132,45 @@ section.banner
                 margin-top: 150px
                 border-radius: 15px
 
+            @media only screen and (max-width: 575px)
+                padding: 0
+                border-radius: 0
+
             .bannerText
+                @media only screen and (max-width: 575px)
+                    padding: 15px 10px
+                    margin-bottom: 25px
+
                 h2
-                    padding-right: 0
+                    @media only screen and (max-width: 991px)
+                        padding-right: 0
+
+                    @media only screen and (max-width: 767px)
+                        font-size: 2rem
 
             .bannerBox
-                max-width: 100%
+                @media only screen and (max-width: 991px)
+                    max-width: 100%
 
-                boxHeader
+                @media only screen and (max-width: 575px)
+                    border-radius: 0
+                
+                .boxHeader
+
+                .boxInner
+                    @media only screen and (max-width: 575px)
+                        padding: 10px
+
+                    .boxAction
+                        @media only screen and (max-width: 575px)
+                            gap: 5px
+
+                    .amountOption
+                        @media only screen and (max-width: 575px)
+                            gap: 5px
+                            padding: 0
+
+
 
         .bannerBg
             @media only screen and (max-width: 991px)
@@ -150,10 +181,16 @@ section.banner
                 height: 500px
                 border-radius: 0
 
+            @media only screen and (max-width: 575px)
+                top: 75px
+                height: 300px
+
+
 
 section.about
     .aboutContainer
-        padding: 75px 0
+        padding-top: 75px
+        padding-bottom: 75px
         display: flex
         align-items: center
         
@@ -198,11 +235,11 @@ section.about
                     padding: 15px 30px
                     border-radius: 30px
                     font-size: .95rem
+                    margin-right: 15px
 
                     &.btnWithImg
                         background-color: #EDF9F8
                         color: $primary
-                        margin-left: 15px
 
                         img
                             margin-left: 10px
@@ -224,6 +261,13 @@ section.about
                 width: 100%
                 padding: 0
                 margin-bottom: 50px
+
+            .aboutBtn
+                .button
+                    &.btnWithImg
+                        @media only screen and (max-width: 575px)
+                            margin-top: 10px
+
 
 
 
@@ -352,6 +396,7 @@ section.detail
         .detailImg
             width: 50%
             padding: 50px 10%
+            padding-right: 0
 
             img
                 max-width: 100%
@@ -374,12 +419,15 @@ section.detail
                 padding: 75px 15%
                 padding-top: 0
 
+            @media only screen and (max-width: 575px)
+                padding-bottom: 50px
+
 
 
 section.newsletter
     position: relative
     padding: 50px 0
-    background-position: center
+    background-position: top center
     background-size: cover
     background-repeat: no-repeat
 
@@ -390,7 +438,7 @@ section.newsletter
         bottom: 0
         top: 0
         content: ''
-        background-color: rgba(0, 0, 0, .65)
+        background-color: rgba(0, 0, 0, .75)
 
     .newletterContainer
         z-index: 1
@@ -401,7 +449,6 @@ section.newsletter
             font-size: 1.75rem
             color: #fff
             margin-bottom: 15px
-
         p
             width: 80%
             margin: 0 auto
@@ -423,3 +470,16 @@ section.newsletter
                 margin-top: 25px
                 border-radius: 30px
                 outline: none
+
+
+
+// newsletter responsive
+section.newsletter
+    .newletterContainer
+        .newsletterFrom
+            input
+                @media only screen and (max-width: 991px)
+                    width: 60%
+
+                @media only screen and (max-width: 767px)
+                    width: 80%
