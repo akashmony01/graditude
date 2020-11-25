@@ -472,10 +472,12 @@ section.newsletter
                 outline: none
 
 
-
 // newsletter responsive
 section.newsletter
     .newletterContainer
+        p
+            @media only screen and (max-width: 575px)
+                width: 100%
         .newsletterFrom
             input
                 @media only screen and (max-width: 991px)
