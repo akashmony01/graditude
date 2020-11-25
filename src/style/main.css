@@ -450,18 +450,24 @@ body {
   outline: none;
 }
 
-.footer .footerContainer {
-  flex-direction: column;
-  gap: 0;
+@media only screen and (max-width: 991px) {
+  .footer .footerContainer {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 
-.footer .footerContainer .footerItem {
-  width: 100%;
-  margin-bottom: 25px;
+@media only screen and (max-width: 991px) {
+  .footer .footerContainer .footerItem {
+    width: 100%;
+    margin-bottom: 25px;
+  }
 }
 
-.footer .footerContainer .footerItem.footerLogo p {
-  max-width: 500px;
+@media only screen and (max-width: 991px) {
+  .footer .footerContainer .footerItem.footerLogo p {
+    max-width: 500px;
+  }
 }
 
 section.banner {
@@ -742,14 +748,18 @@ section.about .aboutContainer .aboutContent .aboutBtn .button.btnWithImg img {
   }
 }
 
-section.about .aboutContainer .aboutImg {
-  width: 100%;
+@media only screen and (max-width: 991px) {
+  section.about .aboutContainer .aboutImg {
+    width: 100%;
+  }
 }
 
-section.about .aboutContainer .aboutContent {
-  width: 100%;
-  padding: 0;
-  margin-bottom: 50px;
+@media only screen and (max-width: 991px) {
+  section.about .aboutContainer .aboutContent {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 50px;
+  }
 }
 
 section.package {
@@ -831,18 +841,21 @@ section.package .packageContainer .packageItem .packageBtn {
   margin: 0 auto;
 }
 
-section.package .packageContainer {
-  gap: 0;
-  flex-direction: column;
+@media only screen and (max-width: 991px) {
+  section.package .packageContainer {
+    gap: 0;
+    flex-direction: column;
+  }
 }
 
-section.package .packageContainer .packageItem {
-  width: 100%;
-  margin-bottom: 35px;
-}
-
-section.package .packageContainer .packageItem:last-child {
-  margin-bottom: 0;
+@media only screen and (max-width: 991px) {
+  section.package .packageContainer .packageItem {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+  section.package .packageContainer .packageItem:last-child {
+    margin-bottom: 0;
+  }
 }
 
 section.detail {

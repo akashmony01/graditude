@@ -216,12 +216,14 @@ section.about
             padding-top: 0
 
         .aboutImg
-            width: 100%
+            @media only screen and (max-width: 991px)
+                width: 100%
 
         .aboutContent
-            width: 100%
-            padding: 0
-            margin-bottom: 50px
+            @media only screen and (max-width: 991px)
+                width: 100%
+                padding: 0
+                margin-bottom: 50px
 
 
 
@@ -295,15 +297,17 @@ section.package
 // package responsive
 section.package
     .packageContainer
-        gap: 0
-        flex-direction: column
+        @media only screen and (max-width: 991px)
+            gap: 0
+            flex-direction: column
         
         .packageItem
-            width: 100%
-            margin-bottom: 35px
+            @media only screen and (max-width: 991px)
+                width: 100%
+                margin-bottom: 35px
 
-            &:last-child
-                margin-bottom: 0
+                &:last-child
+                    margin-bottom: 0
 
 
 section.detail
